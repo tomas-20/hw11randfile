@@ -11,7 +11,13 @@ int random() {
 }
 
 int main() {
-  int n = random();
-  printf("%d\n", n);
+  int randomwans[10];
+  for (int i = 0; i < 10; i ++) {
+    randomwans[i] = random();
+  }
+  for (int i = 0; i < 10; i ++) {
+    printf("%d ", randomwans[i]);
+  }
+  printf("\n");
   return 0;
 }
